@@ -1,12 +1,26 @@
 {
   "name": "demoapp",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "Simple demo Node.js app for product management",
+  "main": "app.js",
+  "private": true,
+  "license": "MIT",
+  "author": "Manjunath",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js",
+    "lint": "eslint",
+    "format": "prettier --single-quote --write *.js"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {}
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": ">=10"
+  }
 }
